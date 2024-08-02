@@ -11,4 +11,9 @@ public class ProductController {
     public ResponseEntity<String> getProductList(){
         return ResponseEntity.ok("product list");
     }
+
+    @GetMapping(value = "/product/{id}")
+    public ResponseEntity<String> getProduct(){
+        return ResponseEntity.ok("product");
+    }
 }
