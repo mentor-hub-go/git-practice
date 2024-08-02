@@ -13,6 +13,11 @@ public class ProductController {
         return ResponseEntity.ok("product list");
     }
 
+    @GetMapping(value = "/product/{id}")
+    public ResponseEntity<String> getProduct(){
+        return ResponseEntity.ok("product");
+    }
+
     @DeleteMapping(value = "/product/{id}")
     public ResponseEntity<String> deleteProduct(){
         return ResponseEntity.ok("delete product");
